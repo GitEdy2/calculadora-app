@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
+import '../styles/Boton.css';
 
-export const Boton = (props) => {
+const Boton = (props) => {
   
   const esOperador = valor => {
       return isNaN(valor) && (valor !== '.') && (valor !== '=');
@@ -14,3 +15,5 @@ export const Boton = (props) => {
     </div>
   );
 }
+
+export default Boton;

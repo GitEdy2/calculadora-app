@@ -1,8 +1,10 @@
 import React from 'react'
 
-const BotonClear = () => {
+const BotonClear = (props) => {
   return (
-    <div>BotonClear</div>
+    <div className='boton-clear' onClick={props.manejarClear}>
+      {props.children}
+    </div>
   )
 }
 
